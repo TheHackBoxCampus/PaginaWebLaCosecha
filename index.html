@@ -1,77 +1,111 @@
-<!DOCTYPE html> 
-<html lang="es"> 
-    <head>
-        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> 
-        <title>La Cosecha</title>   
-        <link rel="stylesheet" href="styles.css">   
-        <script src="utils/process.js" type="text/javascript" defer></script> 
-    </head>
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>La Cosecha</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="utils/process.js" type="module"  ></script>
+  </head>
 
-    <body>
-        <div class="container">
-            <header>
-                <nav>
-                    <div class="logotype">
-                        <picture>
-                            <!-- logotipo -->
-                            <img src="" alt="Logotipo"> 
-                        </picture>
-                    </div>
-                    
-                    <div class="sections">
-                        <span>Acerca de nosotros</span>
-                        <span>Etapas de producción</span>
-                        <span>Otros productos</span>
-                        <span>Testimonios</span>
-                    </div>
+  <body>
+    <div class="container">
+      <header>
+        <nav>
+          <div class="logotype">
+            <picture>
+              <!-- logotipo -->
+              <img src="" alt="Logotype" />
+            </picture>
+          </div>
 
-                    <div class="contact-btn">
-                        <button>Contactame</button>
-                    </div>
-                </nav>
+          <div class="sections">
+            <a href="#about-me">Acerca de nosotros</a >
+            <a href="#">Etapas de producción</a >
+            <a href="#">Otros productos</a >
+            <a href="#">Testimonios</a >
+          </div>
 
-                <div>
-                    <h1>TITLE</h1>
-                    <p>paragraph</p>
-                    
-                    <div>
-                        <button>Ver catalogo</button>
-                        <button>Mas información</button>
-                    </div>
-                </div>
-            </header>
+          <div class="contact-btn">
+            <button>Contactame</button>
+          </div>
+        </nav>
 
-            <main>
-                <section class="about-me">
-                    <h2>Acerca de nosotros</h2>
-                    <div>
-                        <div>
-                            <span>Historia</span>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate dicta sunt nemo veritatis, debitis labore a ad eos explicabo aspernatur.</p>
+        <div class="hero">
+          <h1>TEXTO DE EJEMPLO</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi quas debitis iste rem reiciendis eveniet itaque voluptates ipsum in magni.</p>
 
-                            <span>Mision</span>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium natus obcaecati tenetur, nisi totam officiis aliquam blanditiis quia similique dolorem.</p>
-
-                            <span>Vision</span>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, nam?</p>
-                        </div>
-                        <picture>
-                            <img src="" alt="historia">
-                        </picture>
-                    </div>
-                </section>
-
-                <section id="process">
-                        
-                </section>
-                <section></section>
-                <section></section>
-
-            </main>
-
-            <footer>
-                
-            </footer>
+          <div class="btn-cta">
+            <button>Ver catalogo</button>
+            <button>Mas información</button>
+          </div>
         </div>
-    </body>
+      </header>
+
+      <main>
+        <section class="about-me" id="about-me">
+          <h2>Acerca de nosotros</h2>
+          <div class="about-me-content">
+            <div class="about-me-information">
+              <span>Historia</span>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Cupiditate dicta sunt nemo veritatis, debitis labore a ad eos
+                explicabo aspernatur.
+              </p>
+
+              <span>Mision</span>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Praesentium natus obcaecati tenetur, nisi totam officiis aliquam
+                blanditiis quia similique dolorem.
+              </p>
+
+              <span>Vision</span>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi,
+                nam?
+              </p>
+            </div>
+            <picture>
+              <img src="" alt="history" />
+            </picture>
+          </div>
+        </section>
+
+        <section class="pineapple-process">
+          <h3>Etapas de produccion</h3>
+          <div id="process"></div>
+        </section>
+        
+        <section class="other-products">
+           <h2>Otros productos</h2>
+           <div id="carrousel"></div>
+        </section>
+
+        <section class="testimonials">
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+        </section>
+      </main>
+
+      <footer>
+         <div>
+            <h3>Redes sociales</h3>
+
+         </div>
+         
+         <div>
+            <h3>Conctame</h3>
+            <form>
+              <input type="text" placeholder="Correo electronico">
+              <button type="submit">Enviar</button>
+            </form>
+         </div>
+      </footer>
+    </div>
+  </body>
 </html>
