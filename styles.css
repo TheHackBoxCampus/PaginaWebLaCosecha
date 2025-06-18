@@ -1,0 +1,169 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container { 
+    width: 100%;
+    height: 100%;
+}
+
+/* HomePage */
+
+header { 
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+}
+
+header nav { 
+    width: 100%;
+    height: 3em;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+    padding: 0 1em; 
+}
+
+header nav .sections { 
+    display: flex; 
+    gap: 2em;
+}
+
+header nav .sections > a { 
+    text-decoration: none;
+    color: #000;
+}   
+
+header nav div.contact-btn button { 
+    padding: 10px;
+}
+
+header .hero { 
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+    gap: 2em;
+    text-align: center;
+}
+
+header .hero h1 { 
+    font-size: calc(1em * 5); 
+    width: 70%;
+}
+
+header .hero p { 
+    font-size: 24px;
+    width: 50%;
+}
+
+header .hero .btn-cta { 
+    display: flex;
+    gap: 1em; 
+}
+
+header .hero .btn-cta button { 
+    padding: 1em; 
+    font-size: 1em; 
+    border-radius: 10px; 
+    outline: none; 
+    border: none; 
+}
+
+/* Main */
+
+main section.about-me { 
+    width: 100%;
+    min-height: 70vh;
+    display: flex; 
+    flex-flow: column nowrap; 
+    align-items: center; 
+}
+
+main section.about-me > h2 { 
+    font-size: 30px; 
+}
+
+main section.about-me .about-me-content { 
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 2em;
+    margin-top: 2rem; 
+}
+
+main section.about-me .about-me-content .about-me-information { 
+    display: flex; 
+    width: 70%; 
+    flex-flow: column nowrap; 
+    gap: 2em; 
+}
+
+.modal { 
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0,0.4);
+    overflow: auto;
+    display: flex; 
+    align-content: center;
+    transition: ease 300ms;
+}
+
+.modal-content { 
+    width: 50%;
+    margin: auto; 
+    background: #fff; 
+    display: flex; 
+    padding: 1.5em;
+    transition: ease 300ms; 
+    animation: openModal 500ms; 
+}
+
+.btn-process { 
+    outline: none; 
+    border: none;  
+    border-radius: 100%;
+    padding: 20px; 
+}
+
+.btn-process:hover { 
+    cursor: pointer; 
+    
+}
+ 
+.btn-close { 
+    cursor: pointer; 
+}
+
+/* animations */
+
+@keyframes openModal { 
+    0% { 
+        scale: .5;
+        opacity: .5;
+    }
+
+    100% { 
+        scale: 1;
+        opacity: 1;
+    }
+}
+
+@keyframes closeModal { 
+    0% { 
+        scale: 1;
+        opacity: 1;
+    }
+
+    100% { 
+        scale: .5;
+        opacity: .5;
+    }
+}
