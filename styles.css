@@ -364,8 +364,30 @@ footer .form-contact h3 {
     color: #fff;
 }
 
+footer .social-media .networks { 
+    margin-top: 0.5em; 
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
 
-footer .form-contact form {  
+footer .social-media .networks a { 
+    text-decoration: none;
+    color: #fff;
+}
+
+footer .social-media .networks img { 
+    width: 30px;
+    height: auto;
+}
+footer .social-media .networks div { 
+    display: flex; 
+    align-items: center;
+    gap: 0.4em; 
+}
+
+
+    footer .form-contact form {  
     margin-top: 1em;
     display: flex; 
     flex-direction: column;
