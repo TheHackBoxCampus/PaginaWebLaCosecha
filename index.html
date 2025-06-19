@@ -5,6 +5,7 @@
     <title>La Cosecha</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="utils/process.js" type="module"></script>
+    <script src="utils/carrousel.js" defer></script>
   </head>
 
   <body>
@@ -16,13 +17,14 @@
               <!-- logotipo -->
               <img src="public/images/logo.jpeg" alt="Logotype" />
             </picture>
+            <span>La Cosecha</span>
           </div>
 
           <div class="sections">
             <a href="#about-me">Acerca de nosotros</a>
-            <a href="#">Etapas de producción</a>
-            <a href="#">Otros productos</a>
-            <a href="#">Testimonios</a>
+            <a href="#pineapple-process">Etapas de producción</a>
+            <a href="#other-products">Otros productos</a>
+            <a href="#testimonials">Testimonios</a>
           </div>
 
           <div class="contact-btn">
@@ -31,7 +33,6 @@
         </nav>
 
         <div class="hero">
-          <div class="opacity-background"></div>
           <h1>LA COSECHA</h1>
           <p>La dulzura de nuestra tierra en tus manos</p>
           <div class="btn-cta">
@@ -47,25 +48,25 @@
           <div class="about-me-content">
             <div class="about-me-information">
               <div>
-                  <span>Historia</span>
-              <p>
-                En busqueda de nuevas oportunidades nuestra empresa nació en el
-                año 2016 gracias al apoyo de nuestra familia en la Vereda
-                Angulo, (Santander-Colombia) quién nos impulso para poder hacer
-                de este nuestro sustento.
-              </p>
+                <span>Historia</span>
+                <p>
+                  En busqueda de nuevas oportunidades nuestra empresa nació en
+                  el año 2016 gracias al apoyo de nuestra familia en la Vereda
+                  Angulo, (Santander-Colombia) quién nos impulso para poder
+                  hacer de este nuestro sustento.
+                </p>
 
-              <p>
-                Iniciammos comprando piña a nuestros parientes mas cercanos para
-                comercializarla. Con esfuerzo, transparencia y un fuerte
-                compromiso con la calidad, nos hicimos visibles y sostenibles en
-                el mercado. En la actualidad y gracias a la experiencia
-                adquirida durante estos años no solo comercializamos, también
-                cultivamos y transportamos nuestros productos. Hoy estamos
-                vigentes en el mercado en busca de la mejora y crecimiento
-                contínuo para lograr expandirnos cada dia mas.
-              </p>
-          </div>
+                <p>
+                  Iniciammos comprando piña a nuestros parientes mas cercanos
+                  para comercializarla. Con esfuerzo, transparencia y un fuerte
+                  compromiso con la calidad, nos hicimos visibles y sostenibles
+                  en el mercado. En la actualidad y gracias a la experiencia
+                  adquirida durante estos años no solo comercializamos, también
+                  cultivamos y transportamos nuestros productos. Hoy estamos
+                  vigentes en el mercado en busca de la mejora y crecimiento
+                  contínuo para lograr expandirnos cada dia mas.
+                </p>
+              </div>
 
               <div>
                 <span>Mision</span>
@@ -91,40 +92,59 @@
               </div>
             </div>
             <picture>
-              <img src="" alt="history" />
+              <img src="public/images/family.webp" alt="history" />
             </picture>
           </div>
         </section>
 
-        <section class="pineapple-process">
+        <section class="pineapple-process" id="pineapple-process">
           <h3 id="title">Etapas de produccion</h3>
-          
-          <div id="process">
-            
-          </div>
+
+          <div id="process"></div>
         </section>
 
-        <section class="other-products">
+        <section class="other-products" id="other-products">
           <h2>Otros productos</h2>
           <div id="carrousel"></div>
         </section>
 
-        <section class="testimonials">
-          <div class="card"></div>
-          <div class="card"></div>
-          <div class="card"></div>
-          <div class="card"></div>
-          <div class="card"></div>
-          <div class="card"></div>
+        <section class="testimonials" id="testimonials">
+          <h3>Testimonios</h3>
+          <div class="container-testimonials">
+            <div class="card">
+              <p>Las frutas siempre llegan fresquitas, parecen recién cosechadas. Mis clientes ya reconocen la calidad y no quieren otras</p>
+              <span>Marta Gimena.</span>
+            </div>
+            <div class="card">
+              <p>Trabajo con ingredientes frescos, y estas frutas superan las expectativas. El sabor es natural, nada forzado. Se nota el cuidado desde la finca</p>
+              <span>Luis Fernando</span>
+            </div>
+            <div class="card">
+              <p>Antes me fallaban con entregas y madurez. Desde que trabajo con ellos, todo llega puntual y justo como lo necesito. Son cumplidos y confiables.</p>
+              <span>Tatiana Martinez</span>
+            </div>
+            <div class="card">
+              <p>Sé lo que cuesta producir bien. Lo que esta empresa hace merece respeto. No hay trampa, solo fruta buena y bien tratada</p>
+              <span>Don Ernesto</span>
+            </div>
+            <div class="card">
+              <p>Probé varios proveedores y siempre volvía a ellos. La fruta tiene otro nivel de sabor. No es solo vender, se nota que les importa lo que hacen</p>
+              <span>Camilo Andres</span>
+            </div>
+            <div class="card">
+              <p>Mis hijos son exigentes con la fruta y esta es la única que no dejan a medias. Rica, jugosa y sin sorpresas malas</p>
+              <span>Laura T.</span>
+            </div>
+          </div>
         </section>
       </main>
 
       <footer>
-        <div>
+        <div class="social-media">
           <h3>Redes sociales</h3>
         </div>
 
-        <div>
+        <div class="form-contact">
           <h3>Contactame</h3>
           <form>
             <input type="text" placeholder="Correo electronico" />
