@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="pqrs.css">
+    <script src="./helpers/PQRS.js" type="module" ></script>
+    <title>PQRS | La cosecha</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav>
+          <div class="logotype">
+            <picture>
+              <!-- logotipo -->
+              <a href="/">
+                <img src="../public/images/logo.jpeg" alt="Logotype" />
+              </a>
+            </picture>
+            <span>La Cosecha</span>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <section class="pqrs">
+          <h2>Formulario PQRS</h2>
+            <form id="pqrsform">
+              <label for="nombre">Nombre</label>
+              <input name="name" type="text" id="nombre" required>
+              
+              <label for="email">Correo electronico</label>
+              <input name="email" type="email" id="email" required>
+
+              <label for="tipo">Tipo de solicitud</label>
+              <select id="tipo" name="type" required>
+                <option value=""> Selecciona</option>
+                <option value="Peticion">Petecion</option>
+                <option value="Queja">Queja</option>
+                <option value="Reclamo">Reclamo</option>
+                <option value="Sugerencia">Sugerencia</option>
+              </select>
+
+              <label for="message">Mensaje</label>
+              <textarea name="message" id="message" rows="4" required></textarea>
+
+              <input type="submit" value="Enviar" class="btn btn-submit">
+            </form>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

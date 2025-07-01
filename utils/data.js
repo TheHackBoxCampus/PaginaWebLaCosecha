@@ -34,7 +34,7 @@ export default {
  },
  cleanUp: {
     content: { 
-        title: "Desyerbar",
+        title: "Deshierbar",
         icon: "public/icons/clean.svg", 
         imageUrl: "NaN", 
         information: "Se eliminan las malezas del terreno, ya que compiten con el cultivo por agua, luz y nutrientes, afectando su desarrollo."

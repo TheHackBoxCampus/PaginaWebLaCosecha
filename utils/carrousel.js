@@ -29,7 +29,6 @@ const moveSlide = () => {
 
     counter += 1;
     indexCarrousel += direction;
-    console.log((indexCarrousel)); 
     const slideWidth = imagesContainer.children[0].offsetWidth + 16;
     imagesContainer.style.transform = `translateX(-${indexCarrousel * slideWidth}px)`
 }

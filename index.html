@@ -5,7 +5,8 @@
     <title>La Cosecha</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="utils/process.js" type="module"></script>
-    <script src="utils/carrousel.js" defer></script>
+    <script src="utils/carrousel.js" type="module" defer></script>
+    <script src="utils/contact.js" type="module" defer></script>
   </head>
 
   <body>
@@ -28,6 +29,7 @@
           </div>
 
           <div class="contact-btn">
+            <button id="session-button">Inicia sesion</button>
             <button>Contactame</button>
           </div>
         </nav>
@@ -136,6 +138,18 @@
             </div>
           </div>
         </section>
+
+        
+        <section class="contact" id="contact">
+          <h3>Contacto</h3>
+          <form class="section-form-contact">
+            <input name="name" type="text" placeholder="Nombre" required>
+            <input name="email" type="email" placeholder="Correo electronico"  required>
+            <input name="phone" type="tel" placeholder="Telefono" required >
+            <textarea name="reason" placeholder="Motivo"></textarea>
+            <input type="submit" value="Enviar">
+          </form>
+        </section>
       </main>
 
       <footer>
@@ -154,7 +168,10 @@
             </div>
             </div>
         </div>
-
+        <div class="PQRS">
+          <h3>Legalidades</h3>
+          <a href="./pages/pqrs.html">Seccion PQRS</a>
+        </div>
         <div class="form-contact">
           <h3>Contactame</h3>
           <form>

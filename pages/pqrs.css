@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=LXGW+Marker+Gothic&display=swap");
+
+:root {
+  --font: "LXGW Marker Gothic", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  font-family: var(--font);
+  background: #fefffa;
+}
+
+header {
+  width: 100%;
+  height: auto;
+}
+
+header nav {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+
+header nav div.logotype {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 10px;
+}
+
+header nav div.logotype span {
+  font-weight: bold;
+}
+
+header nav div.logotype picture img {
+  width: 90px;
+  height: 90px;
+  border-radius: 100%;
+}
+
+main section.pqrs {
+  width: 100%;
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+
+main section.pqrs form {
+  display: flex;
+  width: 40%;
+  height: auto;
+  gap: 10px;
+  flex-direction: column;
+}
+
+input,
+select,
+textarea {
+  outline: none;
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.btn {
+  margin-top: 15px;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-submit {
+  background-color: #19bd07;
+  color: #fff;
+}
+
+.btn-submit:hover { 
+    background: #1B730B;
+}
